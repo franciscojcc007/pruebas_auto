@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reporte de Pruebas Automatizadas - Wikipedia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Reporte de Pruebas Automatizadas - Wikipedia</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-11-24 10:10:46</p>
+                <p class='attribute'><strong>Duration: </strong>13.86 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 4, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestWikipedia</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_home_page</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_navigate_discussion</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_navigate_home_spanish</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_search_english</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=131.0.2903.63); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	(No symbol) [0x00007FF679C36B15]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F5F4B4+1437348]
+	sqlite3_dbdata_init [0x00007FF67A002DE6+643174]
+	(No symbol) [0x00007FF679B1AD3C]
+	(No symbol) [0x00007FF679B1D32C]
+	(No symbol) [0x00007FF679B1D3FF]
+	(No symbol) [0x00007FF679B5D6B2]
+	(No symbol) [0x00007FF679B5D5C7]
+	(No symbol) [0x00007FF679B56483]
+	(No symbol) [0x00007FF679B7C19A]
+	(No symbol) [0x00007FF679B53437]
+	(No symbol) [0x00007FF679B532FD]
+	(No symbol) [0x00007FF679B7C480]
+	(No symbol) [0x00007FF679B53437]
+	(No symbol) [0x00007FF679B96BFF]
+	(No symbol) [0x00007FF679B7BE03]
+	(No symbol) [0x00007FF679B52984]
+	(No symbol) [0x00007FF679B51E30]
+	(No symbol) [0x00007FF679B52571]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F0BB44+1094964]
+	(No symbol) [0x00007FF679C732C8]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F0AF83+1091955]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F0AAE9+1090777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D10CF1+461585]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D0CA14+444468]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D0CB59+444793]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D021D6+401398]
+	BaseThreadInitThunk [0x00007FF8E0E1E8D7+23]
+	RtlUserThreadStart [0x00007FF8E211FBCC+44]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\francisco javier\OneDrive\Escritorio\pruebas_auto\wikipedia_test.py", line 35, in test_search_english
+    search_box.send_keys(Keys.RETURN)
+  File "C:\Users\francisco javier\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
+    self._execute(
+  File "C:\Users\francisco javier\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\francisco javier\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\francisco javier\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=131.0.2903.63); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	(No symbol) [0x00007FF679C36B15]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F5F4B4+1437348]
+	sqlite3_dbdata_init [0x00007FF67A002DE6+643174]
+	(No symbol) [0x00007FF679B1AD3C]
+	(No symbol) [0x00007FF679B1D32C]
+	(No symbol) [0x00007FF679B1D3FF]
+	(No symbol) [0x00007FF679B5D6B2]
+	(No symbol) [0x00007FF679B5D5C7]
+	(No symbol) [0x00007FF679B56483]
+	(No symbol) [0x00007FF679B7C19A]
+	(No symbol) [0x00007FF679B53437]
+	(No symbol) [0x00007FF679B532FD]
+	(No symbol) [0x00007FF679B7C480]
+	(No symbol) [0x00007FF679B53437]
+	(No symbol) [0x00007FF679B96BFF]
+	(No symbol) [0x00007FF679B7BE03]
+	(No symbol) [0x00007FF679B52984]
+	(No symbol) [0x00007FF679B51E30]
+	(No symbol) [0x00007FF679B52571]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F0BB44+1094964]
+	(No symbol) [0x00007FF679C732C8]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F0AF83+1091955]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF679F0AAE9+1090777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D10CF1+461585]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D0CA14+444468]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D0CB59+444793]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF679D021D6+401398]
+	BaseThreadInitThunk [0x00007FF8E0E1E8D7+23]
+	RtlUserThreadStart [0x00007FF8E211FBCC+44]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_search_spanish</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 4, Error: 1 -- Duration: 13.86 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
